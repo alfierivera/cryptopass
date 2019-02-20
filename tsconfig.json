@@ -18,5 +18,10 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts",
+    "./node_modules/web3-typescript-typings/index.d.ts"
+  ]
 }
