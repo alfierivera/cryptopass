@@ -71,6 +71,7 @@ export class HomePage implements OnInit {
     const result: any = await modal.onDidDismiss();
     if (result.data !== false) {
       const account = await this._w3.createAccount(result.data.data, result.data.options);
+      this.loadAccounts();
     }
   }
 }
